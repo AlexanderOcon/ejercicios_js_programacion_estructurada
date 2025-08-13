@@ -75,7 +75,48 @@ while (num <= 20) {
 } 
 
 // 13 Crea una función saludar que reciba un nombre y muestre un saludo.
-
-function saludar(Brandon) {
-    console.log(`Hola, ${Brandon}!`);
+function saludar(nombre) {
+    console.log("Hola, " + nombre + " ¡Bienvenido!");
 }
+
+// Ejemplo de uso:
+saludar("Brandon");
+
+// 14 Crea una función sumar que reciba dos números y retorne su suma.
+
+function sumar(num1, num2) {
+    return num1 + num2;
+} 
+let resultadoSuma = sumar(10, 5);
+console.log(`La suma es: ${resultadoSuma}`);
+
+// 15 Crea una función esPar que reciba un número y retorne true si es par, false si no lo es.
+
+function esPar(numero) {
+    return numero % 2 === 0;
+}
+let numero = 5;
+if (esPar(numero)) {
+    console.log(`${numero} es un número par.`);
+}
+else {
+    console.log(`${numero} es un número impar.`);
+} 
+
+// 16 Crea una función areaRectangulo que reciba base y altura y retorne su área.
+
+function areaRectangulo(base, altura) {
+    return base * altura;
+}
+let baseRectangulo = 5;
+let alturaRectangulo = 10;  
+let area = areaRectangulo(baseRectangulo, alturaRectangulo);
+  console.log(`El área del rectángulo es: ${area}`);
+
+// 17 Crea una función flecha multiplicar que reciba dos números y retorne su producto.
+
+const multiplicar = (num1, num2) => num1 * num2;
+let numA = 4;
+let numB = 6;
+let resultadoMultiplicacion = multiplicar(numA, numB);
+  console.log(`El producto de ${numA} x ${numB} es: ${resultadoMultiplicacion}`);
