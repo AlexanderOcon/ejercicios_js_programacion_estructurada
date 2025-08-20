@@ -109,12 +109,14 @@ console.log(personas1[0].nombre); // "Luis"
 console.log(personas1[1].edad); // 25
 
 const usuario = { nombre: "Carlos", edad: 28 };
+
 console.log(usuario.nombre); // "Carlos"
 console.log(usuario.edad); // 28
 
-const usuarios = { nombre: "Ana", "correo ": "ana@mail.com" };
-console.log(usuario["nombre"]); // "Ana"
-console.log(usuario["correo-personal"]); // "ana@mail.com"
+const cliente = { nombre: "Ana", "correo": "ana@mail.com" };
+
+console.log(cliente["nombre"]); // "Ana"
+console.log(cliente["correo"]); // "ana@mail.com"
 
 const empresa = {
   nombre: "TechCorp",
