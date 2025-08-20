@@ -160,23 +160,23 @@ const persona = {
 
 // Cree funciones flecha que reciban ese objeto por parámetro e impriman lo siguiente
 
-const imprimirNombre = (persona) => {
+const imprimirNombre = () => {
   console.log(`Nombre: ${persona.nombre}`);
 };
 
-const imprimirEdad = (persona) => {
+const imprimirEdad = () => {
   console.log(`Edad: ${persona.edad}`);
 };
 
-const imprimirCiudad = (persona) => {
+const imprimirCiudad = () => {
   console.log(`Ciudad: ${persona.direccion.ciudad}`);
 };
 
-const imprimirCodigoPostal = (persona) => {
+const imprimirCodigoPostal = () => {
   console.log(`Código Postal: ${persona["direccion"]["codigoPostal"]}`);
 };
 
-const imprimirSegundoHobby = (persona) => {
+const imprimirSegundoHobby = () => {
   console.log(`Segundo hobby: ${persona.hobbies[1]}`);
 };
 
