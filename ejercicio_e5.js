@@ -52,11 +52,16 @@ let numeros3 = [3, 1, 4, 2];
 numeros3.sort((a, b) => a - b); // Orden ascendente
 console.log(numeros3); // [1, 2, 3, 4]
 
+let caracteres = ['a','x','v','g','j','k'];
+caracteres.sort(); // Orden lexicográfico
+console.log(caracteres); // ['a', 'g', 'j', 'k',
+
 // join(separador): Convierte todos los elementos del arreglo en una cadena, 
 // usando el separador especificado (por defecto, una coma).
 
 let palabras = ['hola', 'mundo'];
 let texto = palabras.join(' '); // 'hola mundo'
+console.log(texto); // 'hola mundo'
 
 // concat(arreglo1, arreglo2, ...): Une dos o más arreglos (o elementos) y devuelve un nuevo arreglo.
 
@@ -83,22 +88,21 @@ console.log(dobles); // [2, 4, 6]
 // elementos que pasan una condición definida por la función callback.
 
 let numeros5 = [1, 2, 3, 4];
-let pares = numeros5.filter(x => x % 2 === 0);
-console.log(pares); // [2, 4]
+let impares = numeros5.filter(x => x % 2 === 0);
+console.log(impares); // [2, 4]
 
 // reduce(callback(acumulador, elemento, indice, arreglo), [valorInicial]):
 // Reduce el arreglo a un solo valor aplicando una función acumuladora.
 
 let numeros6 = [1, 2, 3, 4];
-let suma = numeros6.reduce((acc, curr) => acc + curr, 0);
+let suma = numeros6.reduce((acumalador, ValorACtual) => acumalador + ValorACtual, 0);
 console.log(suma); // 10
 
 // Devuelve true si al menos un elemento cumple la condición especificada.
 
 let numeros7 = [1, 2, 3, 4];
 let hayPares = numeros7.some(x => x % 2 === 0);
-console.log(hayPares); // true
-
+console.log(hayPares); // tracumalador
 // Devuelve true si todos los elementos cumplen la condición especificada.
 
 let numeros8 = [2, 4, 6, 8];
