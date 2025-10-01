@@ -96,8 +96,8 @@ console.log(desarrolladores);
 // { nombre: "Marta", puesto: "Desarrolladora" }
 // ]
 
+// ----------------------------------------------------------------------------------------------//
 // Ejercicios de arreglos y evaluación
-// ---------------------------------------------------------------------------------------- //
 // Empleando el arreglo de objetos adjunto, resuelva los siguientes enunciados:
 
 //1. Obtén un nuevo arreglo con todas las personas cuya edad sea mayor o igual a 18 años.
@@ -113,6 +113,7 @@ const mayoresDeEdad = personas.filter(persona => persona.edad >= 18);
 console.log(mayoresDeEdad);
 
 // 2. Encuentra la primera persona en el arreglo cuyo nombre comience con la letra "L".
+
 const personaConL = personas.find(persona => persona.nombre.startsWith("L"));
 console.log(personaConL);
 
@@ -122,8 +123,11 @@ const sumaEdades = personas.reduce((acc, persona) => acc + persona.edad, 0);
 console.log(sumaEdades);
 
 // 4. Verifica si todas las personas en el arreglo son mayores o iguales a 15 años.
+
 const todosMayores15 = personas.every(persona => persona.edad >= 15);
 console.log(todosMayores15);
+
 // 5. Comprueba si existe al menos una persona en el arreglo que tenga 40 años
+
 const hayAlguienCon40 = personas.some(persona => persona.edad === 40);
 console.log(hayAlguienCon40);
